@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-color: #1a2641;
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.calculator{
+  width: fit-content;
+
+  background-color: #FFF;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.action-container{
+  padding: 1em;
+  background-color: whitesmoke;
+  
+}
+
+.output{
+  padding: 1em;
+  text-align: right;
+  border-bottom:solid 1px lightgray;
+
+  
+}
+
+.output-operands{
+  font-size: larger;
+}
+
+.output-result{
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+.memoryOperations{
+  display: flex;
+  width: 100%;
+}
+.memoryOperations button{
+  width: 50%;
+  
+}
+.operations{
+  display: flex;
+  width: 100%;
+}
+.operations button{
+  width: 20%;
+  background-color:#cbdaff;
+
+  
+}
+.operations button:last-child{
+  width: 20%;
+  background-color:#8598e9;
+}
+.digits{
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+.digits button{
+  width: calc(33.33% - 4px);
+}
+.equal{
+  background-color:#4a5c90;
+  color: white;
+}
+button{
+  background-color: #FFF;
+  padding: 1em;
+  border-radius: 10px;
+  border:none;
+  margin:2px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px 1px;
+}
+button:focus{
+  background-image: linear-gradient(rgba(73, 73, 73, 0.05) 0 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator{
+    margin: 35px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  button{
+    
+    padding: 0.5em;
+    font-size: x-small;
+  }
+}
