@@ -98,7 +98,6 @@ function App() {
     <div className="App">
       <div className="calculator">
         <div className="output">
-          {/*   <div className="output-operands">{history}</div> */}
           <div className="output-result">{result}</div>
         </div>
 

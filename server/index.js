@@ -5,7 +5,7 @@ const fs = require("fs");
 app.use(express.json());
 
 
-//Fix CORS
+
 app.use(function (req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
